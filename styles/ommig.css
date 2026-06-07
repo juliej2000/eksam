@@ -1,0 +1,262 @@
+/* portræt sektion */
+
+.portrait {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  min-height: 500px;
+}
+
+.portrait_img {
+  background: var(--color-text_creme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+
+  padding-top: 20px;
+  align-items: center;
+}
+
+.portrait_img img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+  max-width: 70%;
+}
+
+.portrait_text {
+  background-color: var(--color-text_creme);
+  background: var(--color-text_creme);
+  padding: 0rem;
+
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+.portrait_text h2 {
+  margin-bottom: 15px;
+  color: var(--color-text_dark);
+}
+
+.portrait_text p {
+  margin-bottom: 1rem;
+  line-height: 15px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+/* fisk */
+
+.titel_kunst img {
+  max-width: 120px;
+  align-items: end;
+}
+
+/* popcornbægre */
+
+.popcorn img {
+  max-width: 100px;
+  align-items: end;
+}
+
+/* svamp */
+
+.svamp img {
+  padding-top: 10px;
+  max-width: 70px;
+}
+
+/* uddannelse- og erhvervserfaring sektion */
+
+.info_omgmig1 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  min-height: 500px;
+}
+
+.ommig_img1 {
+  background-color: var(--color-text_creme);
+  background: var(--color-text_creme);
+  padding: 0rem;
+
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.ommig_img1 h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text_dark);
+}
+
+.ommig_img1 p {
+  margin-bottom: 1rem;
+  line-height: 15px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+.omgmig_text1 {
+  background: var(--color-text_creme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+
+  padding-top: 20px;
+  align-items: center;
+}
+
+.ommig_text1 img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+  max-width: 90%;
+
+  padding: 0;
+}
+
+/* hvad har jeg fået ud af 1. semester? */
+
+.info_ommig2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  min-height: 500px;
+}
+
+.ommig_img2 {
+  background-color: var(--color-text_creme);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+
+  padding: 0rem;
+
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+.ommig_text2 img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+  max-width: 80%;
+
+  margin-left: 60px;
+}
+
+.ommig_img2 h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text_dark);
+}
+
+.ommig_img2 p {
+  margin-bottom: 1rem;
+  line-height: 15px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+/* mobil */
+
+@media (max-width: 500px) {
+  .portrait {
+    grid-template-columns: 1fr;
+  }
+
+  .info_omgmig1 {
+    grid-template-columns: 1fr;
+  }
+
+  .info_ommig2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* portræt */
+
+  .portrait_text p {
+    margin-left: 53px;
+    margin-right: 30px;
+  }
+
+  .portrait_text h2 {
+    margin-left: 53px;
+    margin-right: 20px;
+  }
+
+  .titel_kunst img {
+    margin-left: 190px;
+    max-width: 90px;
+
+    padding-bottom: 80px;
+  }
+
+  /* erhvervserfaring */
+
+  .ommig_text1 {
+    order: -1;
+  }
+
+  .ommig_text1 img {
+    margin-left: 25px;
+  }
+
+  .ommig_img1 p {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  .ommig_img1 h2 {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  .popcorn img {
+    margin-left: 170px;
+    max-width: 70px;
+
+    padding-bottom: 80px;
+  }
+
+  /* 1. semester */
+
+  .ommig_img2 p {
+    margin-left: 50px;
+  }
+
+  .ommig_img2 h2 {
+    margin-left: 50px;
+  }
+
+  .ommig_text2 {
+    padding-right: 30px;
+    margin-left: 0;
+  }
+
+  .svamp img {
+    margin-left: 215px;
+
+    padding-bottom: 30px;
+  }
+}
